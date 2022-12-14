@@ -31,12 +31,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          position: "relative",
-          top: "109px"
-        }}
-      >
+      <div className="container-global">
         <main>
           <Hero />
 

@@ -16,7 +16,6 @@ const Header = ({ siteTitle }) => (
             <Col xs="6">
               <a href="/">
                 <StaticImage
-                  // style={{width:"50%"}}
                   src="../../images/logo_hive.webp"
                   loading="eager"
                   alt="Logo"/>

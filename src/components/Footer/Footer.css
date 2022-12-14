@@ -2,7 +2,7 @@ footer{
   background-color: #C2BCB0;
 }
 footer img{
-  width: 317px !important;
+  max-width: 317px !important;
   height: auto !important;
 }
 
@@ -52,4 +52,10 @@ footer form button{
 footer .copy{
   color: #5A5857;
   padding-top: 3rem;
+}
+
+@media screen and (max-width: 992px){
+  footer .columns-footer{
+    padding: 0;
+  }
 }

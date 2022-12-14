@@ -27,7 +27,7 @@ const VideoTemplate = () => {
   const text = JSON.parse(videoData.eventData.raw).content
 
   return(
-    <div className="Video-template">
+    <div className="Video-template p-0 p-md-3">
       <h4>
         {videoData.title}
       </h4>
@@ -43,12 +43,12 @@ const VideoTemplate = () => {
           </iframe>
           {/* <video src="https://lampreaomar.wistia.com/medias/5ngzjaquee?embedType=async&videoFoam=true&videoWidth=640"></video> */}
         </Col>
-        <Col md="6" className="d-flex flex-column justify-content-between pb-1 ps-4">
+        <Col md="6" className="d-flex flex-column justify-content-between pb-1 p-3 ps-md-4">
           <h4 className="subtitle py-0 my-3">{videoData.subtitle}</h4>
           {text.map ((t, i) => { 
             return <p key={"text-" + i}>{t.content[0].value}</p>
           })}
-          <a href="/" className="link">
+          <a href="/" className="link mt-3 mt-md-0">
             DOWNLOAD PDF REPORT
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#BDB5A7" className="arrow-link" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>

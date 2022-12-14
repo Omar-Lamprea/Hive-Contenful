@@ -7,8 +7,11 @@
     ". . ."
     ". . column-right"
     ". . column-right"; 
-    padding: 1rem;
-    padding-bottom: 2rem;
+
+  
+
+  padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 .grid-template img{
@@ -26,4 +29,17 @@
 
 .grid-template .row-r img{
   height: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .grid-template{
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."
+      ". column-right"; 
+  }
 }

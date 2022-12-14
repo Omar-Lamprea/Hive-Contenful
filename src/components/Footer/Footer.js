@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <Container className="py-3">
         <Row className="justify-content-center my-5">
-          <Col md="10">
+          <Col md="10" className="text-center text-md-start">
             <a href="/">
               <StaticImage
                 src="../../images/logo_hive_black.webp"

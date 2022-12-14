@@ -230,9 +230,24 @@ pre tt:after {
 }
 
 
-/* main template */
 
+
+
+/* main template */
 .main-template{
   background-color: #BDB5A7;
   padding: 0 8rem;
+}
+.container-global{
+  position: relative;
+  top: 109px;
+}
+
+@media screen and (max-width: 992px) {
+  .container-global {
+    top: 79%;
+  }
+  .main-template{
+    padding: 0;
+  }
 }
