@@ -25,11 +25,6 @@ const VideoTemplate = () => {
   }`)
   const videoData = data.allContentfulVideoTemplate.edges[0].node
   const text = JSON.parse(videoData.eventData.raw).content
-  // console.log("text: ");
-  // console.log(text);
-  //para iterar en una lista de P.....
-  const text1 = text[0].content[0].value
-  const text2 = text[0].content[0].value
 
   return(
     <div className="Video-template">
@@ -50,7 +45,9 @@ const VideoTemplate = () => {
         </Col>
         <Col md="6" className="d-flex flex-column justify-content-between pb-1 ps-4">
           <h4 className="subtitle py-0 my-3">{videoData.subtitle}</h4>
-          {text.map (t => <p>{t.content[0].value}</p>)}
+          {text.map ((t, i) => { 
+            return <p key={"text-" + i}>{t.content[0].value}</p>
+          })}
           <a href="/" className="link">
             DOWNLOAD PDF REPORT
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#BDB5A7" className="arrow-link" viewBox="0 0 16 16">
