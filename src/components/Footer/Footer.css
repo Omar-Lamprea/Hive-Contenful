@@ -1,0 +1,55 @@
+footer{
+  background-color: #C2BCB0;
+}
+footer img{
+  width: 317px !important;
+  height: auto !important;
+}
+
+footer .columns-footer{
+  padding: 0 7rem;
+}
+
+footer ul{
+  margin: 0;
+  list-style: none;
+}
+footer ul li{
+  padding: .5rem 0;
+}
+footer ul li a{
+  text-decoration: none;
+  color: #5A5857;
+  font-family: sans-serif;
+}
+footer ul li a:hover{
+  color: #797DD4;
+}
+footer ul li a span{
+  font-family: sans-serif;
+}
+footer ul li i{
+  padding-right: .5rem;
+}
+
+footer form{
+  display: flex;
+  flex-direction: column;
+}
+footer form input, footer form textarea{
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+}
+footer form button{
+  padding: .5rem 3rem;
+  width: fit-content;
+  border: none;
+  border-radius: 2px;
+  background-color: #797DD4;
+  color: #fff;
+}
+footer .copy{
+  color: #5A5857;
+  padding-top: 3rem;
+}

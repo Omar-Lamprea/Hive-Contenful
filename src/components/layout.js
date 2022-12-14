@@ -8,8 +8,14 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header/header"
+import Hero from '../components/Hero/Hero'
+import VideoTemplate from './VideoTemplate/VideoTemplate'
+import Imagesgrid from './ImagesTemplate/ImagesGrid'
+import Footer from './Footer/Footer'
+
 import "./layout.css"
+import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,22 +33,22 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
+          position: "relative",
+          top: "109px"
         }}
       >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <main>
+          <Hero />
+
+          <section className="main-template">
+            <Container>
+              <VideoTemplate />
+              <Imagesgrid />
+            </Container>
+          </section>
+
+        </main>
+        <Footer />
       </div>
     </>
   )

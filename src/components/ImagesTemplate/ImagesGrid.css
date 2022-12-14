@@ -1,0 +1,29 @@
+.grid-template{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    ". . ."
+    ". . column-right"
+    ". . column-right"; 
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.grid-template img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.grid-template .row-r{
+  grid-area: column-right;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-template .row-r img{
+  height: 100%;
+}

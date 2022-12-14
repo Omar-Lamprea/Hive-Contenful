@@ -39,5 +39,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `0gs50jnhscv6`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        //accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: "k6m-Y0B8w6ILl4k3o22L6l_sb4ga5-ejO0xsm7L4tsM",
+      },
+    },
   ],
 }
